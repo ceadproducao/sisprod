@@ -1,0 +1,127 @@
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.formDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--Cinza);
+    border: 2px solid white;
+}
+
+.formDiv label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formDiv input,
+.formDiv select,
+.formDiv textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.formDiv textarea {
+    resize: vertical;
+}
+
+.formAddProf {
+    position: relative;
+    background-color: var(--Cinza-Claro);
+    width: 90%;
+    max-width: 600px;
+    /* Limita o tamanho em telas grandes */
+    max-height: 90vh;
+    /* Não passa de 90% da altura da tela */
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 5px solid white;
+    overflow-y: auto;
+    /* Habilita rolagem interna se necessário */
+}
+
+.formAddProf label {
+    font-weight: bold;
+}
+
+.treinamentos {
+    display: flex;
+}
+
+.formAddProf .formDiv div {
+    padding: 5px;
+}
+
+.formAddProf .formDiv input,
+.formAddProf .formDiv select {
+    width: 80%;
+}
+
+.formAddProf .formDiv input[type="file"] {
+    background-color: white;
+}
+
+.submitBtn {
+    align-self: center;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: var(--Roxo);
+    padding: 8px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: white;
+}
+
+.submitBtn:hover,
+.btn:hover {
+    background-color: var(--Roxo-Claro);
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.submitContainer {
+    position: absolute;
+    bottom: -1px;
+    z-index: 11;
+    background-color: var(--Cinza-Claro);
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    border-top: 4px solid white;
+    height: 60px;
+}
+
+.btn {
+    border-radius: 10px;
+    margin: 10px;
+    background-color: var(--Roxo);
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: white
+}

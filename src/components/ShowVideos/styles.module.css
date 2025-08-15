@@ -1,0 +1,48 @@
+.container {
+    width: calc(100% - 40px);
+    background-color: var(--Cinza);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.innerContainer {
+    width: 90%;
+}
+
+.topicos {
+    display: flex;
+    justify-content: center;
+}
+
+.container table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: var(--Cinza-Claro);
+}
+
+.container td,
+.container th {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.container thead {
+    background-color: var(--Cinza-Medio);
+}
+
+.detalhes {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.detalhes p {
+    margin: 4px 0;
+}
+
+.video:hover {
+    filter: brightness(1.05)
+}

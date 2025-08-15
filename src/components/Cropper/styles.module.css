@@ -1,0 +1,46 @@
+.cropper {
+    max-width: 80vw;
+    width: fit-content;
+    max-height: 80vh;
+    height: fit-content;
+}
+
+.cropperContainer {
+    background-color: var(--Cinza);
+    padding: 10px;
+    width: 60vw;
+    min-width: fit-content;
+    border-radius: 20px;
+    border: 5px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg {
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    border-radius: 10px;
+    margin: 10px;
+    background-color: var(--Roxo);
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: white
+}
+
+.btn:hover {
+    background-color: var(--Roxo-Claro);
+    border: 2px solid white;
+    cursor: pointer;
+}

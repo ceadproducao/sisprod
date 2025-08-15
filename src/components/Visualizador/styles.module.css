@@ -1,0 +1,82 @@
+.bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    height: 80%;
+    background-color: var(--Cinza);
+    border-radius: 30px;
+    border: 5px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.closeBtn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    left: auto;
+    bottom: auto;
+    background-color: var(--Roxo);
+    border-radius: 30px;
+    padding: 5px;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.closeBtn:hover {
+    border: 2px solid white;
+    background-color: var(--Roxo-Claro);
+    cursor: pointer;
+}
+
+.title {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title h2 {
+    margin-bottom: 0;
+}
+
+.title p {
+    font-size: 12pt;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    overflow-y: auto;
+}
+
+.table a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: var(--Roxo);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    margin: 5px;
+}
+
+.table a:hover {
+    background-color: var(--Roxo-Claro);
+    border: 2px solid white;
+    text-decoration: underline;
+}

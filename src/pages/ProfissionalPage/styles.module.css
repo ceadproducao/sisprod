@@ -1,0 +1,72 @@
+.containerTitle {
+    background-color: var(--Cinza);
+    width: calc(100%-20px);
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--Cinza);
+    width: calc(100%-20px);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.disciplinas div a {
+    background-color: var(--Roxo);
+    color: white;
+}
+
+.disciplinas div a:hover {
+    background-color: var(--Roxo-Claro);
+    color: white;
+    border: 2px solid white;
+}
+
+.containerTitle img {
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.btn {
+    background-color: var(--Roxo);
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: white;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: var(--Roxo-Claro);
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.filtros {
+    background-color: var(--Cinza-Claro);
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn:disabled,
+.btn:disabled:hover {
+    background-color: var(--Cinza-Claro);
+    color: black;
+    cursor: not-allowed;
+    border: 2px solid white;
+}
+.busca {
+    padding: 10px;
+    flex: 1;
+    border: 2px solid black;
+    border-radius: 10px;
+}

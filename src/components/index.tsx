@@ -1,0 +1,16 @@
+export { default as Header } from "./Header"
+export { default as ShowDisciplinas } from "./ShowDisciplinas"
+export { default as CardPessoa } from "./CardPessoa"
+export { default as ShowPessoal } from "./ShowPessoal"
+export { default as FormAddDisciplina } from "./FormAddDisciplina"
+export { default as Menu } from "./Menu"
+export { default as ShowTopicos } from "./ShowTopicos"
+export { default as ShowVideos } from "./ShowVideos"
+export { default as Panel } from "./Panel"
+export { default as FormAddProfissional } from "./FormAddProfissional"
+export { default as ShowPessoas } from "./ShowPessoas"
+export { default as Cropper } from "./Cropper"
+export { default as Visualizador } from "./Visualizador"
+export { default as ConfirmPrompt } from "./ConfirmPrompt"
+export { default as EditProfissional } from './EditProfissional'
+export { default as SelectDisciplina } from './SelectDisciplina'

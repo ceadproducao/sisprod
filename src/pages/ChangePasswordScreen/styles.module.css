@@ -1,0 +1,67 @@
+.logo {
+    width: 230px;
+}
+
+.container {
+    background-color: var(--Cinza);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    border: 5px solid var(--Cinza-Claro)
+}
+
+.centerer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.formDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input {
+    width: 40%;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.btn {
+    background-color: var(--Roxo);
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: white;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: var(--Roxo-Claro);
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.btnDel {
+    border-radius: 10px;
+    margin: 10px;
+    background-color: white;
+    padding: 6px;
+    border: 2px solid var(--Cinza-Claro);
+    border-radius: 8px;
+}
+
+.btnDel:hover {
+    background-color: var(--Cinza-Claro);
+    cursor: pointer;
+    border: 2px solid white;
+}

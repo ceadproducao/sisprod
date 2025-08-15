@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.busca {
+    padding: 10px;
+    flex: 1;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: var(--Roxo);
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: white
+}
+
+.btn:hover {
+    background-color: var(--Roxo-Claro);
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.filtros {
+    background-color: var(--Cinza);
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid var(--Cinza-Claro);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn:disabled,
+.btn:disabled:hover {
+    background-color: var(--Cinza-Claro);
+    color: black;
+    cursor: not-allowed;
+    border: 2px solid white;
+}

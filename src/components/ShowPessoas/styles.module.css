@@ -1,0 +1,68 @@
+.pessoalTecnico {
+    width: calc(100% - 40px);
+    background-color: var(--Cinza);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profissionais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.profissionais a {
+    justify-content: center;
+}
+
+.btn {
+    background-color: var(--Roxo);
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: white;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: var(--Roxo-Claro);
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.input {
+    padding: 10px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.filtros {
+    background-color: var(--Cinza-Claro);
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn:disabled,
+.btn:disabled:hover {
+    background-color: var(--Cinza);
+    color: black;
+    cursor: not-allowed;
+    border: 2px solid white;
+}
+
+.busca {
+    padding: 10px;
+    flex: 1;
+    border: 2px solid black;
+    border-radius: 10px;
+}

@@ -1,0 +1,131 @@
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.formDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    background-color: var(--Cinza);
+}
+
+.formDiv input {
+    width: 70%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.formDiv select {
+    width: 73%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.formDiv textarea {
+    width: 70%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+    resize: none;
+}
+
+.formAddProf {
+    position: relative;
+    background-color: var(--Cinza-Claro);
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid white;
+}
+
+.formAddProf label {
+    font-weight: bold;
+}
+
+.formAddProf .formDiv {
+    margin: 0;
+    padding: 0;
+    min-width: 60%;
+    width: fit-content;
+    border: 2px solid white;
+    margin: 5px;
+}
+
+.treinamentos {
+    display: flex;
+}
+
+.formAddProf .formDiv div {
+    padding: 5px;
+}
+
+.formAddProf .formDiv input,
+.formAddProf .formDiv select {
+    width: 80%;
+}
+
+.formAddProf .formDiv input[type="file"] {
+    background-color: white;
+}
+
+.submitBtn {
+    align-self: center;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: var(--Roxo);
+    padding: 8px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: white;
+}
+
+.submitBtn:hover,
+.btn:hover {
+    background-color: var(--Roxo-Claro);
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.submitContainer {
+    position: absolute;
+    bottom: -1px;
+    z-index: 11;
+    background-color: var(--Cinza-Claro);
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    border-top: 4px solid white;
+    height: 60px;
+}
+
+.btn {
+    border-radius: 10px;
+    margin: 10px;
+    background-color: var(--Roxo);
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: white
+}

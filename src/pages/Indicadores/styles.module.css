@@ -1,0 +1,106 @@
+.tabela {
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.tabela,
+.tabela td,
+.tabela th {
+    border: 2px solid black;
+    text-align: center;
+    padding: 5px;
+}
+
+.tabela thead {
+    background-color: var(--Cinza);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    background-color: var(--Roxo);
+    color: var(--Cinza-Claro);
+    border: 2px solid transparent;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--Roxo-Claro);
+    border: 2px solid var(--Cinza)
+}
+
+.tabelasQtds {
+    display: flex;
+}
+
+.qtdsTxt {
+    display: flex;
+    align-items: center;
+}
+
+.indicador {
+    margin-left: 16px;
+    border-left: 2px solid #ddd;
+    padding-left: 8px;
+    margin-bottom: 8px;
+}
+
+.containerHierarquico {
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    padding: 4px;
+}
+
+.cabecalho:hover {
+    background-color: #f5f5f5;
+}
+
+.seta {
+    font-size: 12px;
+    width: 16px;
+}
+
+.titulo {
+    font-weight: bold;
+    flex: 1;
+}
+
+.qtd {
+    font-size: 14px;
+    color: #555;
+}
+
+.botao {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #084298;
+}
+
+.filhos {
+    margin-top: 4px;
+}

@@ -1,0 +1,45 @@
+.logo {
+    width: 230px;
+    margin-bottom: 30px;
+}
+
+.container {
+    background-color: var(--Cinza);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: calc(100% - 40px);
+}
+
+.centerer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    width: 20%;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.btn {
+    background-color: var(--Roxo);
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: white;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: var(--Roxo-Claro);
+    border: 2px solid white;
+    cursor: pointer;
+}
