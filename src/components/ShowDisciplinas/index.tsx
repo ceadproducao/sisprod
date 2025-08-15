@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./styles.module.css"
 import { Disciplina, Profissional } from "../../Interfaces";
-import { useEffect } from "react";
 
 export default function ShowDisciplinas({ profissional, disciplinas, idsAntigos }: { profissional?: Profissional, disciplinas: Disciplina[], idsAntigos?: string[] }) {
     function getFuncoes(disciplina: Disciplina, pessoa: Profissional) {

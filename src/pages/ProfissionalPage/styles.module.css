@@ -1,6 +1,6 @@
 .containerTitle {
     background-color: var(--Cinza);
-    width: calc(100%-20px);
+    width: calc(100% - 20px);
     padding: 20px;
     margin-top: 20px;
     display: flex;
@@ -10,7 +10,7 @@
 
 .container {
     background-color: var(--Cinza);
-    width: calc(100%-20px);
+    width: calc(100% - 20px);
     padding: 20px;
     margin-top: 20px;
 }
@@ -64,6 +64,7 @@
     cursor: not-allowed;
     border: 2px solid white;
 }
+
 .busca {
     padding: 10px;
     flex: 1;
