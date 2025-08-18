@@ -11,7 +11,7 @@ export default function Menu() {
             {menuOpen ? <div className={styles.innerMenu}>
                 <div className={styles.header}>
                     <button className={styles.closeButton} onClick={() => setMenuOpen(false)}>X</button>
-                    <button className={styles.profileButton} onClick={() => { setMenuOpen(false); navigate("/profissional/" + currentUser?.id) }}><img src={currentUser?.foto != "" ? currentUser?.foto : "/icons/avatar.svg"} alt="" style={{ width: "50px", borderRadius: "50%" }}></img></button>
+                    <button className={styles.profileButton} onClick={() => { setMenuOpen(false); navigate("/profissional/" + currentUser?.id) }}><img src={currentUser?.foto != "" ? currentUser?.foto : `${import.meta.env.BASE_URL}icons/avatar.svg`} alt="" style={{ width: "50px", borderRadius: "50%" }}></img></button>
                 </div>
                 <Link to={"/"} onClick={() => setMenuOpen(false)}>Disciplinas</Link>
                 <Link to={"/profissionais"} onClick={() => setMenuOpen(false)}>Profissionais</Link>

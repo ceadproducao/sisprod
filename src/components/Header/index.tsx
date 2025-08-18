@@ -10,9 +10,9 @@ export default function Header({ back }: { back?: string }) {
     return (
         <>
             <header className={styles.header}>
-                {back ? <Link to={back} className={styles.btn}><img src="/icons/arrow.png" alt="" /></Link> : ""}
+                {back ? <Link to={back} className={styles.btn}><img src={`${import.meta.env.BASE_URL}icons/arrow.png`} alt="" /></Link> : ""}
                 <img className={styles.logo} src={logo} alt="Produção UVV On" />
-                <button className={styles.btn + " " + styles.btnMenu} onClick={() => setMenuOpen(true)}><img src="/icons/menu.svg" alt="menu" /></button>
+                <button className={styles.btn + " " + styles.btnMenu} onClick={() => setMenuOpen(true)}><img src={`${import.meta.env.BASE_URL}icons/menu.svg`} alt="menu" /></button>
             </header>
             <div style={{ marginBottom: 100 }}>
 

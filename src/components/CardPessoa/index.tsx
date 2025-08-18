@@ -39,7 +39,7 @@ export default function CardPessoa({ pessoa, disciplina }: { pessoa: Profissiona
     }
     return (
         <Link to={`/profissional/${pessoa.id}`} className={styles.card}>
-            <img src={pessoa.foto != "" ? pessoa.foto : "/icons/avatar.svg"} alt="" />
+            <img src={pessoa.foto != "" ? pessoa.foto : `${import.meta.env.BASE_URL}icons/avatar.svg`} alt="" />
             <h3>{pessoa.nome}</h3>
             {disciplina ? <p><strong>Funções: </strong> {funcoes}</p> : <p><strong>Email: </strong>{pessoa.email}</p>}
         </Link>

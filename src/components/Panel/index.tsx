@@ -1748,7 +1748,7 @@ export default function Panel({ tipo, setTipo, open, setOpen, disciplina }: { ti
                                     <button className={styles.card} style={profs.includes(pessoa) ? { backgroundColor: "var(--Roxo-Claro)" } : {}} onClick={() => {
                                         profs.includes(pessoa) ? unselectProf({ prof: pessoa }) : selectProf({ prof: pessoa });
                                     }} key={index}>
-                                        <img src={pessoa.foto != "" ? pessoa.foto : "/icons/avatar.svg"} alt="" />
+                                        <img src={pessoa.foto != "" ? pessoa.foto : `${import.meta.env.BASE_URL}icons/avatar.svg`} alt="" />
                                         <div>
                                             <h3>{pessoa.nome}</h3>
                                             <p>{pessoa.email}</p>

@@ -1010,7 +1010,7 @@ export default function FormAddDisciplina({ closeAction }: { closeAction: () => 
 
                             >
 
-                                <img src={pessoa.foto || "/icons/avatar.svg"} alt="" />
+                                <img src={pessoa.foto || `${import.meta.env.BASE_URL}icons/avatar.svg`} alt="" />
 
                                 <div>
 
@@ -1132,7 +1132,7 @@ export default function FormAddDisciplina({ closeAction }: { closeAction: () => 
 
                             >
 
-                                <img src={pessoa.foto || "/icons/avatar.svg"} alt="" />
+                                <img src={pessoa.foto || `${import.meta.env.BASE_URL}icons/avatar.svg`} alt="" />
 
                                 <div>
 
@@ -1254,7 +1254,7 @@ export default function FormAddDisciplina({ closeAction }: { closeAction: () => 
 
                             >
 
-                                <img src={pessoa.foto || "/icons/avatar.svg"} alt="" />
+                                <img src={pessoa.foto || `${import.meta.env.BASE_URL}icons/avatar.svg`} alt="" />
 
                                 <div>
 
@@ -1446,7 +1446,7 @@ export default function FormAddDisciplina({ closeAction }: { closeAction: () => 
 
                                                         >
 
-                                                            <img src={pessoa.foto || "/icons/avatar.svg"} alt="" />
+                                                            <img src={pessoa.foto || `${import.meta.env.BASE_URL}icons/avatar.svg`} alt="" />
 
                                                             <div>
 
@@ -1578,7 +1578,7 @@ export default function FormAddDisciplina({ closeAction }: { closeAction: () => 
 
                                                         >
 
-                                                            <img src={pessoa.foto || "/icons/avatar.svg"} alt="" />
+                                                            <img src={pessoa.foto || `${import.meta.env.BASE_URL}icons/avatar.svg`} alt="" />
 
                                                             <div>
 
@@ -1760,7 +1760,7 @@ export default function FormAddDisciplina({ closeAction }: { closeAction: () => 
 
                                                         >
 
-                                                            <img src={pessoa.foto || "/icons/avatar.svg"} alt="" />
+                                                            <img src={pessoa.foto || `${import.meta.env.BASE_URL}icons/avatar.svg`} alt="" />
 
                                                             <div>
 
@@ -1901,7 +1901,7 @@ export default function FormAddDisciplina({ closeAction }: { closeAction: () => 
 
                                                         >
 
-                                                            <img src={pessoa.foto || "/icons/avatar.svg"} alt="" />
+                                                            <img src={pessoa.foto || `${import.meta.env.BASE_URL}icons/avatar.svg`} alt="" />
 
                                                             <div>
 

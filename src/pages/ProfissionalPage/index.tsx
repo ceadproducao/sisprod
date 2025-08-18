@@ -221,7 +221,7 @@ export default function ProfissionalPage() {
                                 )}
                             </p>
                         </div>
-                        <img src={profissional.foto != "" ? profissional.foto : "/icons/avatar.svg"} alt="" />
+                        <img src={profissional.foto != "" ? profissional.foto : `${import.meta.env.BASE_URL}icons/avatar.svg`} alt="" />
                     </div>
                     <div className={styles.container}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
