@@ -113,21 +113,55 @@ export default function DisciplinaPage() {
                             </div>}
                         </div>
                         <p><strong>ID:</strong> {disciplinaAtual.id}</p>
+                        <p><strong>Área:</strong> {disciplinaAtual.area}</p>
                         {disciplinaAntiga && <p><strong>Disciplina Antiga:</strong> {disciplinaAntiga.id} - {disciplinaAntiga.nome} <button className={styles.btn} onClick={() => navigate("/disciplina/" + disciplinaAntiga.id)}>Acessar</button></p>}
                         <p><strong>Versão:</strong> {disciplinaAtual.versao}</p>
-                        {disciplinaAtual.up ? <p><strong>UP:</strong> Sim</p> : null}
+                        {disciplinaAtual.up ? <p><strong>UP:</strong> {disciplinaAtual.up}</p> : null}
+                        {disciplinaAtual.prioridade && <p><strong>Prioridade:</strong> {disciplinaAtual.prioridade}</p>}
+                        {disciplinaAtual.statusMatriz && <p><strong>Status da Matriz:</strong> {disciplinaAtual.statusMatriz} ({disciplinaAtual.linkMatriz})</p>}
                         <p><strong>Ano:</strong> {disciplinaAtual.ano}</p>
-                        <p><strong>Ementa: </strong>
-                            {disciplinaAtual.ementa ? disciplinaAtual.ementa : <button className={styles.btn} onClick={() => { setOpenPainel(true); setTipoPainel("disciplina") }}>Adicionar Ementa</button>}
-                        </p>
-                        <p><strong>ISBN: </strong>
-                            {disciplinaAtual.isbn ? disciplinaAtual.isbn : <button className={styles.btn} onClick={() => { setOpenPainel(true); setTipoPainel("disciplina") }}>Adicionar ISBN</button>}
-                        </p>
+                        {(disciplinaAtual.ementa || currentUser?.admin) && (
+                            <p>
+                                <strong>Ementa: </strong>
+                                {disciplinaAtual.ementa ?? (
+                                    <button
+                                        className={styles.btn}
+                                        onClick={() => {
+                                            setOpenPainel(true);
+                                            setTipoPainel("disciplina");
+                                        }}
+                                    >
+                                        Adicionar Ementa
+                                    </button>
+                                )}
+                            </p>
+                        )}
+                        {(disciplinaAtual.isbn || currentUser?.admin) && <p><strong>ISBN: </strong>
+                            {disciplinaAtual.isbn ??
+                                <button
+                                    className={styles.btn}
+                                    onClick={() => {
+                                        setOpenPainel(true);
+                                        setTipoPainel("disciplina")
+                                    }}
+                                >
+                                    Adicionar ISBN
+                                </button>}
+                        </p>}
                         <p><strong>Status:</strong> {CalcularStatus()}</p>
+                        {disciplinaAtual.detalhamento && <p><strong>Detalhamento de Produção/Importação:</strong> {disciplinaAtual.detalhamento}</p>}
                     </div>
                     <ShowPessoal disciplina={disciplinaAtual} />
                     <ShowTopicos topicos={disciplinaAtual.topicos} classBtn={styles.btn} classTitle={styles.titleContainer} setOpenPainel={setOpenPainel} setTipoPainel={setTipoPainel} />
                     <ShowVideos videos={disciplinaAtual.topicos.flatMap(t => t.videos)} classBtn={styles.btn} classTitle={styles.titleContainer} setOpenPainel={setOpenPainel} setTipoPainel={setTipoPainel} />
+                    <div className={styles.container}>
+                        <h3>AVA</h3>
+                        <p><strong>Liberado para criação da instância?</strong> {disciplinaAtual.liberadoCriacao ? "Sim" : "Não"}</p>
+                        <p><strong>Padrão:</strong> {disciplinaAtual.padrao}</p>
+                        <p><strong>Ambiente:</strong> {disciplinaAtual.ambiente}</p>
+                        {disciplinaAtual.codAVA20 && <p><strong>Código do AVA 20%:</strong> {disciplinaAtual.codAVA20}</p>}
+                        {disciplinaAtual.codAVA100 && <p><strong>Código do AVA 100%:</strong> {disciplinaAtual.codAVA100}</p>}
+                    </div>
                 </>}
         </>
     );
